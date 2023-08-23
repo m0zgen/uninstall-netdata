@@ -12,7 +12,7 @@ cd $SCRIPT_PATH
 if [ ! -f /usr/sbin/netdata ]; then
     echo "Netdata is not installed!"
     exit 1
-elif
+else
     # Check if folder exists
     if [ ! -d "${TMP_PATH}" ]; then
         mkdir -p "${TMP_PATH}"
